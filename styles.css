@@ -1,0 +1,62 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #626161;
+  display: flex;
+}
+h2 {
+  color: #626161;
+  padding-left: 80%;
+}
+
+label {
+  font-weight: bold;
+  display: flex;
+}
+
+input {
+  padding: 8px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  display: flex;
+}
+*/ button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+}
+
+button:hover {
+  background-color: #45a049;
+  display: flex;
+}
+
+.result {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.calculator-content-body-right {
+  display: block;
+  margin-left: 50%;
+  font-weight: bold;
+  color: #626161;
+}
+
+.redClass {
+  color: red;
+}
+#btn {
+  height: 50px;
+  width: 150px;
+  color: azure;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Калькулятор Ипотеки</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Рассчитайте примерный платеж</h1>
+    <h2>Шаг 1 из 3</h2>
+    <label for="property-price">Цена недвижимости,<span>₽</span></label>
+    <input
+      type="number"
+      class="property-price"
+      id="property-price"
+      placeholder="price"
+      value="0"
+    />
+    <label for="down-payment">Первоначальный взнос</label>
+    <input
+      type="number"
+      class="down-payment"
+      id="down-payment"
+      placeholder="payment"
+      value="0"
+    />
+    <label for="loan-term">Срок кредита</label>
+    <input
+      type="number"
+      class="loan-term"
+      id="loan-term"
+      placeholder="term"
+      value="0"
+    />
+    <input
+      type="range"
+      min="0"
+      max="100"
+      id="loanTerm-range"
+      class="loanTerm-range"
+      oninput="fun1()"
+    />
+    <button id="btn">Рассчитать</button>
+    <div class="calculator-content-body-right">
+      <div class="final-result-wrapper">
+        <div id="loanTerm"></div>
+        <div class="title">Сумма кредита</div>
+        <div id="amount-of-credit"></div>
+        <div class="title">Ставка</div>
+        <div id="monthly-payment" class="monthly-payment"></div>
+        <div class="title">Ежемесячный платеж</div>
+        <div id="recommended-income"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
